@@ -15,6 +15,9 @@ const config: Config = {
             },
         },
         extend: {
+            fontSize: {
+                '12xl': '11rem',
+            },
             backgroundImage: {
                 'gradient-to-text':
                     'linear-gradient(to right, #024344, #008B8D)',

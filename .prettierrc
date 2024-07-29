@@ -13,5 +13,8 @@
   "endOfLine": "lf",
   "embeddedLanguageFormatting": "auto",
   "singleAttributePerLine": true,
-  "proseWrap": "always"
+  "proseWrap": "always",
+  "plugins": [
+   "prettier-plugin-tailwindcss" 
+  ]
 }
