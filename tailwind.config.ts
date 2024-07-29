@@ -12,6 +12,9 @@ const config: Config = {
                 'gradient-to-text':
                     'linear-gradient(to right, #024344, #008B8D)',
             },
+            display: {
+                hide: 'none',
+            },
             colors: {
                 'light-blue': '#29AFB1',
             },
