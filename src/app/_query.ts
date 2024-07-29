@@ -11,6 +11,7 @@ import { serviceBlock } from '@/fragments/serviceBlock';
 import { getGrantBlock } from '@/fragments/getGrantBlock';
 import { benefitBlock } from '@/fragments/benefitBlock';
 import { grantTypeBlock } from '@/fragments/grantTypeBlock';
+import { meta } from '@/fragments/meta';
 
 const userQuery = gql`
   query landingPage {
@@ -33,6 +34,7 @@ const userQuery = gql`
           faqBlock ${faqBlock}
           blogBlock ${blogBlock}
           footer ${footer}
+          meta ${meta}
         }
       }
     }
