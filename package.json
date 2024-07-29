@@ -16,10 +16,21 @@
     "@mui/icons-material": "^5.16.5",
     "@mui/material": "^5.16.5",
     "framer-motion": "^11.3.19",
+    "@headlessui/react": "^2.1.2",
+    "@radix-ui/react-accordion": "^1.2.0",
+    "@radix-ui/react-hover-card": "^1.1.1",
+    "@radix-ui/react-navigation-menu": "^1.2.0",
+    "@radix-ui/react-popover": "^1.1.1",
+    "@uidotdev/usehooks": "^2.4.1",
+    "class-variance-authority": "^0.7.0",
+    "clsx": "^2.1.1",
+    "lucide-react": "^0.416.0",
     "graphql": "^16.9.0",
     "next": "14.2.5",
     "react": "^18",
-    "react-dom": "^18"
+    "react-dom": "^18",
+    "tailwind-merge": "^2.4.0",
+    "tailwindcss-animate": "^1.0.7"
   },
   "devDependencies": {
     "@types/node": "^20",
@@ -28,6 +39,7 @@
     "eslint": "^8",
     "eslint-config-next": "14.2.5",
     "postcss": "^8",
+    "prettier-plugin-tailwindcss": "^0.5.14",
     "prettier": "3.3.3",
     "tailwindcss": "^3.4.1",
     "typescript": "^5"

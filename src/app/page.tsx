@@ -1,11 +1,17 @@
-import TestimonialBlock from '@/components/testimonial/TestimonialBlock';
-import BlogBlock from '@/components/blog/BlogBlock';
-import { client } from '@/lib/client';
 import userQuery from '@/app/_query';
-import ReceivingGrantBlock from '@/components/getGrantChain/ReceivingGrantBlock';
-import FaqBlock from '@/components/faq/FaqBlock';
+import { BenefitBlock } from '@/components/benefitBlock/benefitBlock';
+import BlogBlock from '@/components/blog/BlogBlock';
 import CallToGrantAction from '@/components/callForGrant/CallToGrantAction';
+import FaqBlock from '@/components/faq/FaqBlock';
 import Footer from '@/components/footer/Footer';
+import { GetGrantBlock } from '@/components/getGrantBlock';
+import ReceivingGrantBlock from '@/components/getGrantChain/ReceivingGrantBlock';
+import { GrantTypeBlock } from '@/components/grant-type-block';
+import { Header } from '@/components/header';
+import { HeroBlock } from '@/components/heroBlock';
+import { ServiceBlock } from '@/components/serviceBlock';
+import TestimonialBlock from '@/components/testimonial/TestimonialBlock';
+import { client } from '@/lib/client';
 
 export default async function Home() {
     const data = (
@@ -15,6 +21,13 @@ export default async function Home() {
     ).data;
 
     const {
+        header,
+        heroBlock,
+        serviceBlock,
+        getGrantBlock,
+        benefitBlock,
+        grantTypeBlock,
+
         receivingGrantBlock,
         readyForGrantBlock,
         testimonialBlock,
@@ -25,12 +38,41 @@ export default async function Home() {
 
     return (
         <main>
+
+            <Header data={header} />
+
+            <div className="h-20 lg:h-24" />
+            
+            <div className='container'>
+  
+                <HeroBlock data={heroBlock} />
+
+                <div className="py-4" />
+
+                <ServiceBlock data={serviceBlock} />
+            </div>
+
+            <div className="py-4" />
+
+            <GetGrantBlock data={getGrantBlock} />
+
+            <div className="py-4" />
+
+            <BenefitBlock data={benefitBlock} />
+
+            <div className="py-4" />
+
             <div className={'mx-5'}>
                 <ReceivingGrantBlock
                     receivingGrantBlock={
                         receivingGrantBlock
                     }></ReceivingGrantBlock>
             </div>
+
+            <GrantTypeBlock data={grantTypeBlock} />
+
+            <div className="py-4" />
+
             <CallToGrantAction
                 readyForGrantBlock={readyForGrantBlock}></CallToGrantAction>
             <div className={'mt-10'}>
