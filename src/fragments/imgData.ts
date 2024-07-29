@@ -4,6 +4,7 @@ export const imgData = `
     attributes {
       url
       width
+      alternativeText
       height
       formats
       previewUrl
