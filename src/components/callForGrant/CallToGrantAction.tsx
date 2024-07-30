@@ -20,7 +20,7 @@ const CallToGrantAction: FC<CallToGrantActionProps> = ({
                     background: `url(${ImageHelpers.resolveImage(readyForGrantBlock.bgMobileImage.data.attributes.url)}) no-repeat center center`,
                     backgroundSize: 'cover',
                 }}
-                className={'block sm:hidden relative py-10 pl-5 rounded-3xl'}>
+                className={'relative block rounded-3xl py-10 pl-5 sm:hidden'}>
                 <div className={'w-1/2'}>
                     <CustomTitle
                         isNotTransparent={true}
@@ -32,7 +32,7 @@ const CallToGrantAction: FC<CallToGrantActionProps> = ({
                     </CustomParagraph>
 
                     <button
-                        className={`mt-7 p-5 text-light-blue  bg-white text-lg rounded-3xl ${namuFont.className}`}>
+                        className={`mt-7 rounded-3xl bg-white  p-5 text-lg text-light-blue ${namuFont.className}`}>
                         {readyForGrantBlock.button.title}
                     </button>
                 </div>
@@ -44,9 +44,9 @@ const CallToGrantAction: FC<CallToGrantActionProps> = ({
                     backgroundSize: 'cover',
                 }}
                 className={
-                    'overflow-hidden mx-10 px-10 rounded-full hide sm:flex relative flex-row justify-around'
+                    'hide relative mx-10 flex-row justify-around overflow-hidden rounded-full px-10 sm:flex'
                 }>
-                <div className={''}>
+                <div className={'self-end'}>
                     <Image
                         src={`${ImageHelpers.resolveImage(readyForGrantBlock.contentDesktopImage.data.attributes.url)}`}
                         width={
@@ -59,25 +59,27 @@ const CallToGrantAction: FC<CallToGrantActionProps> = ({
                         }
                         alt={'Empty'}></Image>
                 </div>
-                <div className={'w-7/12 flex flex-col self-center'}>
+                <div className={'flex w-7/12 flex-col self-center'}>
                     <div
                         className={
-                            'flex flex-row justify-between items-center gap-10 lg:text-lg'
+                            'flex flex-row items-center justify-between gap-10 lg:text-lg'
                         }>
                         <CustomTitle
-                            className={'2xl:text-3xl'}
+                            className={
+                                'text-sm sm:text-lg md:text-xl lg:text-2xl xl:text-3xl'
+                            }
                             isNotTransparent={true}
                             style={{ color: 'white' }}>
                             {readyForGrantBlock.title}
                         </CustomTitle>
                         <button
-                            className={`mt-7 p-5 text-light-blue  bg-white text-lg rounded-3xl ${namuFont.className}`}>
+                            className={`mt-7 rounded-3xl bg-white  p-5 text-lg text-light-blue ${namuFont.className}`}>
                             {readyForGrantBlock.button.title}
                         </button>
                     </div>
-                    <div className={'border border-white w-full my-5'}></div>
+                    <div className={'my-5 w-full border border-white'}></div>
                     <CustomParagraph
-                        className={`mt-7 text-white  2xl:text-2xl`}>
+                        className={`text-md mt-7 font-bold text-white  opacity-100 md:text-sm 2xl:text-2xl`}>
                         {readyForGrantBlock.content}
                     </CustomParagraph>
                 </div>
