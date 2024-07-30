@@ -38,50 +38,45 @@ export default async function Home() {
     return (
         <>
             <Header data={header} />
-            <main>
+            <main className={'container'}>
                 <div className="h-20 lg:h-24" />
 
-                <div className="container">
-                    <HeroBlock data={heroBlock} />
+                <HeroBlock data={heroBlock} />
 
-                    <div className="py-4" />
+                <div className="py-4" />
 
-                    <ServiceBlock data={serviceBlock} />
-                </div>
+                <ServiceBlock data={serviceBlock} />
 
                 <div className="py-4" />
 
                 <GetGrantBlock data={getGrantBlock} />
 
-                <div className="py-4" />
+                <div className="pt-20" />
 
-                <div className="container">
-                    <BenefitBlock data={benefitBlock} />
+                <BenefitBlock data={benefitBlock} />
 
-                    <div className="py-4" />
+                <div className="pt-20" />
 
-                    <ReceivingGrantBlock
-                        receivingGrantBlock={receivingGrantBlock}
-                    />
+                <ReceivingGrantBlock
+                    receivingGrantBlock={receivingGrantBlock}
+                />
 
-                    <GrantTypeBlock data={grantTypeBlock} />
+                <GrantTypeBlock data={grantTypeBlock} />
 
-                    <div className="py-5" />
-                </div>
-
+                <div className="pt-32" />
                 <CallToGrantAction
                     readyForGrantBlock={readyForGrantBlock}></CallToGrantAction>
-                <div className={'mt-10'}>
+                <div className={'mt-20'}>
                     <TestimonialBlock
                         testimonialBlock={testimonialBlock}></TestimonialBlock>
                 </div>
-                <div className={'mt-10'}>
+                <div className={'mt-24'}>
                     <FaqBlock faqBlock={faqBlock}></FaqBlock>
                 </div>
-                <div className={'mt-10 bg-[#EAF7F8] px-5'}>
+                <div className={'mt-20 bg-[#EAF7F8] px-5'}>
                     <BlogBlock blogBlock={blogBlock}></BlogBlock>
                 </div>
-                <div className={'mt-20'}>
+                <div className={'mt-32'}>
                     <Footer footer={footer}></Footer>
                 </div>
             </main>

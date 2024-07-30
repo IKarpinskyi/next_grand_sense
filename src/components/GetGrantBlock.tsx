@@ -23,7 +23,7 @@ export const GetGrantBlock: React.FC<GetGrantBlockProps> = ({ data }) => {
             <div className="py-4" />
 
             <div className="flex flex-row lg:container lg:gap-10">
-                <div className="hidden flex-1 space-y-3 rounded-3xl bg-white px-10 py-5 pl-5 lg:block">
+                <div className="hide flex-1 space-y-3 rounded-3xl bg-white px-10 py-5 pl-5 lg:block">
                     <CustomTitle className="text-5xl">
                         {data.heading}
                     </CustomTitle>
@@ -33,7 +33,7 @@ export const GetGrantBlock: React.FC<GetGrantBlockProps> = ({ data }) => {
                     </p>
                 </div>
                 <div className="container relative flex flex-1 flex-row overflow-hidden rounded-2xl bg-teal-500 py-5 lg:rounded-full">
-                    <div className="hidden flex-1 lg:block" />
+                    <div className="hide flex-1 lg:block" />
                     <div className="flex w-[60%] flex-col gap-3 text-white lg:flex-1">
                         <p className="w-1/2 text-2xl leading-tight lg:w-full">
                             {data.title}
@@ -42,7 +42,7 @@ export const GetGrantBlock: React.FC<GetGrantBlockProps> = ({ data }) => {
                             {data.description}
                         </p>
                         <button
-                            className={`mt-2 rounded-3xl bg-white py-2 px-5 text-lg text-light-blue lg:w-fit ${namuFont.className}`}>
+                            className={`mt-2 rounded-3xl bg-white px-5 py-2 text-lg text-light-blue lg:w-fit ${namuFont.className}`}>
                             {data.contactButton.title}
                         </button>
                     </div>

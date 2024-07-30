@@ -52,7 +52,7 @@ export const Header: React.FC<HeaderProps> = memo(({ data }) => {
                                     height={data.logo.data.attributes.height}
                                     className="lg:h-11 lg:w-36"
                                 />
-                                <div className="hidden flex-row gap-10 lg:flex">
+                                <div className="hide flex-row gap-10 lg:flex">
                                     {data.hederItems.map((headerItem) => (
                                         <Popover key={headerItem.title}>
                                             <PopoverTrigger className="text-m flex flex-row items-center gap-1">
@@ -94,7 +94,7 @@ export const Header: React.FC<HeaderProps> = memo(({ data }) => {
                                 </div>
 
                                 <button
-                                    className={`rounded-full border-2 py-1 border-teal-500 px-2 text-light-blue lg:bg-teal-500 lg:text-2xl lg:text-white ${namuFont.className}`}>
+                                    className={`rounded-full border-2 border-teal-500 px-2 py-1 text-light-blue lg:bg-teal-500 lg:text-2xl lg:text-white ${namuFont.className}`}>
                                     {data.button.title}
                                 </button>
                                 {/* menu burger / lg:hidden */}
